@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Models.Entidades;
+using Models.Entities;
 
 namespace Data
 {
@@ -14,5 +15,6 @@ namespace Data
         }
 
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<PrecioOferta> PrecioOfertas { get; set; }
     }
 }
